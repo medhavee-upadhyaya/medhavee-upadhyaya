@@ -3,7 +3,7 @@
 I build AI systems and test their limits.
 
 **Currently working on:**
-- 🔬 LLM-based Automatic Program Repair (university research)
+- 🔬 LLM-based Automatic Program Repair 
 - 🛠️ AI-powered testing frameworks
 
 **Things I've built:**
