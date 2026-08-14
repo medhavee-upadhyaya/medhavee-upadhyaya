@@ -52,10 +52,8 @@ npx codecheck-init
 | Project | The question behind it |
 |:--|:--|
 | **[NeuroField](https://github.com/medhavee-upadhyaya/NeuroField)** | Can specialized AI agents run a shared world without constant human direction? |
-| **[Preflight](https://github.com/medhavee-upadhyaya/TestPilot-AI)** | How little input should a useful QA system require? |
-| **[Self-Healing Mobile Automation](https://github.com/medhavee-upadhyaya/mobile-automation-framework-python-appium)** | What if broken selectors were recoverable state instead of failed tests? |
-| **[Gemini Test Automation](https://github.com/medhavee-upadhyaya/gemini-chatbot-test-automation)** | How do you test software when the output is probabilistic? |
-| **[NepalElection.chat](https://nepalelection.chat/)** | Can civic AI be useful without asking people to trust it blindly? |
+| **[Reality Drift](https://github.com/medhavee-upadhyaya/reality-drift)** | Can AI uncover the gap between what companies claim and what regulatory evidence shows? |
+| **[Single Model vs. Ensemble](https://github.com/medhavee-upadhyaya/single-model-vs-ensemble-cifar10)** | Do ensembles win because of diversity—or because they receive more compute? |
 
 <p align="right"><a href="https://www.medhaveeupadhyaya.com/projects"><strong>See all projects →</strong></a></p>
 
