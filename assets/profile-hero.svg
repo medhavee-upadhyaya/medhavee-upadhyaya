@@ -1,5 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
   <title id="title">Medhavee Upadhyaya</title>
+  <desc id="desc">AI and machine learning engineer building agentic systems, production AI applications, and LLM infrastructure.</desc>
+  <style>
+    :root { color-scheme: light dark; }
+    .bg { fill: #efefe4; }
+    .ink { fill: #111110; }
+    .muted { fill: #5e5e55; }
+    .accent { fill: #9b513e; }
+    .line { stroke: #111110; }
+    .soft-line { stroke: #c8c8b8; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #111110; }
+      .ink { fill: #efefe4; }
+      .muted { fill: #aaa99a; }
+      .accent { fill: #d38169; }
+      .line { stroke: #efefe4; }
+      .soft-line { stroke: #383832; }
+    }
+  </style>
+
+  <rect class="bg" width="1200" height="360" rx="18"/>
+
+  <g opacity=".32" fill="none" class="soft-line">
+    <path d="M42 76H1158M42 284H1158"/>
+    <path d="M946 30V330"/>
+  </g>
+
+  <circle class="accent" cx="74" cy="55" r="7"/>
+  <text class="muted" x="94" y="61" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" letter-spacing="2.4">MEDHAVEE.DEV / GITHUB</text>
+
+  <text class="ink" x="58" y="181" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-weight="700" letter-spacing="-2">Medhavee</text>
+  <text class="accent" x="58" y="253" font-family="Georgia, 'Times New Roman', serif" font-size="76" font-style="italic" letter-spacing="-2">Upadhyaya.</text>
+
+  <g transform="translate(982 72)">
+    <text class="muted" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1.6">CURRENTLY</text>
+    <text class="ink" y="27" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">San Francisco</text>
+    <text class="ink" y="50" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">Building at DOSE</text>
+  </g>
+
+  <g transform="translate(982 178)">
+    <text class="muted" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1.6">WORKBENCH</text>
+    <text class="ink" y="27" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">AI systems</text>
+    <text class="ink" y="50" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">ML engineering</text>
+    <text class="ink" y="73" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15">LLM infrastructure</text>
+  </g>
+
+  <g transform="translate(58 318)">
+    <line class="line" x1="0" y1="0" x2="45" y2="0" stroke-width="2"/>
+    <text class="muted" x="62" y="5" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="1.25">AGENTS THAT ACT. MODELS THAT LEARN. SYSTEMS THAT SCALE.</text>
+  </g>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Medhavee Upadhyaya</title>
   <desc id="desc">Software engineer building reliable AI systems, developer tools, and thoughtful experiments.</desc>
   <style>
     :root { color-scheme: light dark; }
