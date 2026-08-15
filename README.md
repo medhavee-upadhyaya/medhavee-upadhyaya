@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="./assets/profile-hero.svg" width="100%" alt="Medhavee Upadhyaya — AI systems, reliability, and developer tools" />
+  <img src="./assets/profile-hero.svg" width="100%" alt="Medhavee Upadhyaya — AI systems, ML engineering, and LLM infrastructure" />
 </p>
 
 <p align="center">
-  <strong>I build reliable AI systems.</strong><br>
+  <strong>AI/ML Engineer building agentic systems and production AI applications.</strong><br>
   <sub>Founding Software Developer at <a href="https://www.getdose.app/">DOSE</a> · San Francisco</sub>
 </p>
 
@@ -13,90 +13,95 @@
   <a href="https://www.linkedin.com/in/medhavee-upadhyaya/">LinkedIn ↗</a>
 </p>
 
----
+I build AI systems that do more than generate text: agents that operate in changing environments, data pipelines that turn messy evidence into decisions, and ML experiments that explain why a model behaves the way it does.
 
-## Building now
-
-### [CodeCheck](https://github.com/medhavee-upadhyaya/codecheck) — your code tests itself
-
-CodeCheck brings AI-generated testing into the developer loop. It reads changed code, creates focused tests, runs them with the project's own test runner, and explains failures where developers already work.
-
-<pre>
-changed code → generate tests → run → explain → report
-                                      ├─ terminal
-                                      ├─ GitHub PR
-                                      ├─ Slack
-                                      ├─ VS Code
-                                      └─ dashboard
-</pre>
-
-**23 packages · 10 test scopes · 4 AI providers · JavaScript and Python**
-
-<details>
-<summary><strong>Try the smallest useful setup</strong></summary>
-<br>
-<pre>
-npm install -D \
-  @codecheck/trigger-oncommit \
-  @codecheck/scope-unit \
-  @codecheck/output-terminal
-
-npx codecheck-init
-</pre>
-</details>
+Right now I am shipping production Claude-powered experiences at **DOSE**, contributing to **vLLM**, and working deeper into model training and inference.
 
 ---
 
-## Selected projects
+## What I am building
 
-| Project | The question behind it |
+### [NeuroField](https://github.com/medhavee-upadhyaya/NeuroField) — autonomous agents in a living world
+
+A multi-agent system that manages a simulated 100-sector farm. A supervisor plans, a worker acts through tools, outcomes feed back into memory, and the world updates live through FastAPI and WebSockets.
+
+`Python` · `Claude` · `Agents` · `Tool Use` · `FastAPI` · `WebSockets` · `SQLite` · `React`
+
+### [Reality Drift](https://github.com/medhavee-upadhyaya/reality-drift) — AI that compares claims with evidence
+
+An end-to-end AI product that gathers public and regulatory data, runs a multi-stage Claude analysis pipeline, scores the gap between corporate language and filings, stores history in a knowledge graph, and streams results to a Next.js interface.
+
+`Python` · `FastAPI` · `Claude` · `Knowledge Graphs` · `SSE` · `Next.js` · `TypeScript`
+
+---
+
+## ML experiments
+
+### [Single Model vs. Ensemble on CIFAR-10](https://github.com/medhavee-upadhyaya/single-model-vs-ensemble-cifar10)
+
+A controlled PyTorch study asking whether ensembles improve predictions because of model diversity—or simply because they receive more training compute.
+
+| Result | Finding |
 |:--|:--|
-| **[NeuroField](https://github.com/medhavee-upadhyaya/NeuroField)** | Can specialized AI agents run a shared world without constant human direction? |
-| **[Reality Drift](https://github.com/medhavee-upadhyaya/reality-drift)** | Can AI uncover the gap between what companies claim and what regulatory evidence shows? |
-| **[Single Model vs. Ensemble](https://github.com/medhavee-upadhyaya/single-model-vs-ensemble-cifar10)** | Do ensembles win because of diversity—or because they receive more compute? |
+| **81.4%** | Compute-matched single model accuracy |
+| **78.1%** | Five-model ensemble accuracy |
+| **71.3%** | Baseline CNN accuracy |
+| **0.0439 ECE** | The baseline was the best-calibrated model |
 
-<p align="right"><a href="https://www.medhaveeupadhyaya.com/projects"><strong>See all projects →</strong></a></p>
-
----
-
-## Questions I am exploring
-
-- Did an LLM genuinely repair the program, or did its patch only satisfy weak tests?
-- What does meaningful coverage look like for probabilistic software?
-- Can metamorphic relations become test oracles when no single correct answer exists?
-- How should teams detect silent model degradation after small data shifts?
-
-**Current research:** [Reliable LLM Evaluation for Automatic Program Repair](https://www.medhaveeupadhyaya.com/llm-apr-eval.pdf)
+The ensemble became more robust under some distribution shifts, but the compute-matched model won on clean accuracy and calibration. The project includes actual predictions, corruption sweeps, reliability diagrams, and an honest negative MC-Dropout result.
 
 ---
 
-## Notes from the workbench
+## Open source
 
-1. [I ran CodeCheck on its own code. It found bugs I missed.](https://medium.com/@medhaveeupadhyaya/i-ran-my-ai-testing-tool-on-its-own-code-it-found-bugs-i-missed-d8a11356ed71)
-2. [We built a tool that makes your code test itself.](https://medium.com/@medhaveeupadhyaya/i-built-a-tool-that-makes-your-code-test-itself-heres-everything-i-learned-48ed7d40bb3d)
-3. [When models fail quietly.](https://medium.com/@medhaveeupadhyaya/when-models-fail-quietly-what-small-data-shifts-reveal-about-ml-reliability-b39afccdc78e)
-4. [Metamorphic testing: the missing oracle.](https://medium.com/@medhaveeupadhyaya/metamorphic-testing-the-secret-weapon-qa-never-knew-it-needed-f3e02a038fd5)
+### [vLLM PR #52279](https://github.com/vllm-project/vllm/pull/52279) — engine-backed tool parsing
+
+An open bugfix for vLLM's tool-calling infrastructure. The change preserves parser-engine normalized content when no tool call is produced, adds regression coverage for engine and non-engine paths, and passes:
+
+- **106** focused parser tests
+- **3,784** parser-engine tests
+- Relevant pre-commit checks
+
+This is the direction I am actively growing: understanding and contributing to the infrastructure beneath LLM APIs.
+
+---
+
+## AI developer infrastructure
+
+### [CodeCheck](https://github.com/medhavee-upadhyaya/codecheck)
+
+A 23-package, multi-provider developer platform that brings AI-generated analysis into commits, CI, GitHub pull requests, Slack, VS Code, and a live dashboard. It supports Claude, OpenAI, Gemini, and local Ollama models through composable triggers, scopes, and outputs.
+
+`TypeScript` · `MCP` · `Structured Outputs` · `Multi-provider LLMs` · `GitHub Actions`
+
+---
+
+## Technical range
+
+<pre>
+AI systems       agents · tool calling · structured outputs · MCP · prompt caching
+Machine learning PyTorch · CNNs · ensembles · calibration · distribution shift
+Backend          Python · FastAPI · async systems · WebSockets · SSE · REST APIs
+Frontend         TypeScript · React · Next.js · data visualization
+Infrastructure   vLLM · GitHub Actions · CI/CD · model-serving fundamentals
+</pre>
+
+---
+
+## Writing
+
+- [When models fail quietly: what small data shifts reveal about ML behavior](https://medium.com/@medhaveeupadhyaya/when-models-fail-quietly-what-small-data-shifts-reveal-about-ml-reliability-b39afccdc78e)
+- [Building a tool that makes your code test itself](https://medium.com/@medhaveeupadhyaya/i-built-a-tool-that-makes-your-code-test-itself-heres-everything-i-learned-48ed7d40bb3d)
+- [Building a self-healing mobile automation framework](https://medium.com/@medhaveeupadhyaya/building-a-self-healing-mobile-automation-framework-appium-ai-locator-recovery-and-visual-3ba73389a763)
 
 <p align="right"><a href="https://medium.com/@medhaveeupadhyaya"><strong>Read more →</strong></a></p>
 
 ---
 
-## Tools I use
+## Let's build
 
-<pre>
-AI systems    Claude SDK · MCP · RAG · structured outputs · agents
-Evaluation    LLM testing · metamorphic testing · robustness · program repair
-Automation    PyTest · Playwright · Appium · Selenium · OpenCV
-Engineering   Python · TypeScript · JavaScript · React · Node.js
-Shipping      GitHub Actions · Docker · CI/CD · observability
-</pre>
-
----
-
-## Let's build something
-
-I like problems where ordinary tests are not enough—AI behavior, developer tooling, program repair, and systems where trust matters.
+I am interested in agentic systems, applied ML, LLM infrastructure, model training, inference, and AI products that solve real problems.
 
 **[Explore the full portfolio →](https://www.medhaveeupadhyaya.com/)**
 
-<sub>San Francisco · building production AI at DOSE · working in public</sub>
+<sub>San Francisco · building production AI at DOSE · contributing in public</sub>
