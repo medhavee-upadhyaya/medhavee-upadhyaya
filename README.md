@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/profile-hero.svg" width="100%" alt="Medhavee Upadhyaya — AI systems, ML engineering, and LLM infrastructure" />
+  <img src="./assets/profile-hero.png" width="100%" alt="Medhavee Upadhyaya — AI systems, ML engineering, and LLM infrastructure" />
 </p>
 
 <p align="center">
