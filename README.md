@@ -88,6 +88,10 @@ Infrastructure   vLLM · GitHub Actions · CI/CD · model-serving fundamentals
 
 ---
 
+[![medhavee-upadhyaya's tokpop.dev — AI workflow stats](https://tokpop.dev/api/v1/cards/medhavee-upadhyaya?theme=dark)](https://tokpop.dev/make/medhavee-upadhyaya)
+
+---
+
 ## Writing
 
 - [When models fail quietly: what small data shifts reveal about ML behavior](https://medium.com/@medhaveeupadhyaya/when-models-fail-quietly-what-small-data-shifts-reveal-about-ml-reliability-b39afccdc78e)
